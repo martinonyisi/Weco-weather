@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-g  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeCo · Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ===== SEO & META TAGS ===== -->
+  <title>WeCo · Weather App - Real-time Weather Forecast</title>
+  <meta name="description" content="WeCo is a sophisticated real-time weather app with 7-day forecasts, live updates, and complete customization. Get accurate weather data for any city worldwide." />
+  <meta name="keywords" content="weather, forecast, real-time weather, weather app, 7-day forecast, temperature, humidity, wind speed, weather tracker" />
+  <meta name="author" content="Martin Onyisi (Martony)" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://weco-alpha.vercel.app" />
+
+  <!-- ===== OPEN GRAPH / SOCIAL MEDIA ===== -->
+  <meta property="og:title" content="WeCo · Weather App - Real-time Weather Forecast" />
+  <meta property="og:description" content="Get accurate real-time weather data, 7-day forecasts, and live updates for any city worldwide. Beautiful, customizable, and always current." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1200&h=630&fit=crop&crop=center" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="WeCo Weather App - Real-time weather forecast" />
+  <meta property="og:url" content="https://weco-alpha.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="WeCo Weather" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WeCo · Weather App - Real-time Weather Forecast" />
+  <meta name="twitter:description" content="Get accurate real-time weather data, 7-day forecasts, and live updates for any city worldwide." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1200&h=630&fit=crop&crop=center" />
+  <meta name="twitter:image:alt" content="WeCo Weather App - Real-time weather forecast" />
+  <meta name="twitter:site" content="@martony" />
+  <meta name="twitter:creator" content="@martony" />
+
+  <!-- ===== FAVICON & APPLE TOUCH ICONS ===== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛅</text></svg>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛅</text></svg>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛅</text></svg>" />
+  <link rel="manifest" href="data:application/json,{'name':'WeCo Weather','short_name':'WeCo','start_url':'/','display':'standalone','background_color':'#0b121f','theme_color':'#5b9bd5','icons':[{'src':'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛅</text></svg>','sizes':'192x192','type':'image/svg+xml'}]}" />
+
+  <!-- ===== THEME COLOR ===== -->
+  <meta name="theme-color" content="#5b9bd5" />
+  <meta name="msapplication-TileColor" content="#0b121f" />
+
+  <!-- ===== FONT AWESOME ===== -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WeCo Weather",
+    "description": "Real-time weather app with 7-day forecasts, live updates, and complete customization.",
+    "applicationCategory": "Weather Application",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "author": {
+      "@type": "Person",
+      "name": "Martin Onyisi",
+      "url": "https://martony.gt.tc"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://weco-alpha.vercel.app",
+    "screenshot": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1200&h=630&fit=crop&crop=center"
+  }
+  </script>
+
   <style>
     /* ----- RESET & VARIABLES ----- */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
@@ -222,7 +288,7 @@ g  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       opacity: 0.4; margin-top: 0.1rem; color: var(--text-secondary);
     }
 
-    /* ----- FORECAST (FIXED DARK MODE VISIBILITY) ----- */
+    /* ----- FORECAST ----- */
     .forecast-section { margin-top: 1.6rem; position: relative; z-index: 2; }
     .forecast-section .section-label {
       font-weight: 400; font-size: 0.75rem; color: var(--text-secondary);
