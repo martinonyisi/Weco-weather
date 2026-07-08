@@ -1,0 +1,97 @@
+{
+  "name": "WeCo Weather App",
+  "short_name": "WeCo",
+  "description": "Real-time weather app with 7-day forecasts, live updates, and complete customization. Get accurate weather data for any city worldwide.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b121f",
+  "theme_color": "#5b9bd5",
+  "orientation": "portrait",
+  "categories": ["weather", "productivity", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%235b9bd5'/%3E%3Ctext x='256' y='370' text-anchor='middle' font-size='300'%3E⛅%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%235b9bd5'/%3E%3Ctext x='256' y='370' text-anchor='middle' font-size='300'%3E⛅%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1280&h=720&fit=crop&crop=center",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "WeCo Weather App Dashboard with real-time weather data"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=720&h=1280&fit=crop&crop=center",
+      "sizes": "720x1280",
+      "type": "image/jpeg",
+      "platform": "narrow",
+      "label": "WeCo Weather App mobile view with 7-day forecast"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search Weather",
+      "short_name": "Search",
+      "description": "Search for weather in any city",
+      "url": "/",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='56' font-size='56'%3E🔍%3C/text%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "My Location",
+      "short_name": "Location",
+      "description": "Get weather for your current location",
+      "url": "/?location=auto",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='56' font-size='56'%3E📍%3C/text%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "7-Day Forecast",
+      "short_name": "Forecast",
+      "description": "View the 7-day weather forecast",
+      "url": "/#forecast",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='56' font-size='56'%3E📅%3C/text%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "permissions": ["geolocation"],
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "handle_links": "preferred",
+  "edge_side_panel": {
+    "preferred_width": 480
+  }
+}
